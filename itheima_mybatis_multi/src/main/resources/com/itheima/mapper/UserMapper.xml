@@ -31,15 +31,15 @@
 
     <resultMap id="userRoleMap" type="user">
         <!--user的信息-->
-        <id column="userId" property="id"></id>
-        <result column="username" property="username"></result>
-        <result column="password" property="password"></result>
-        <result column="birthday" property="birthday"></result>
+        <id column="userId" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="birthday" property="birthday"/>
         <!--user内部的roleList信息-->
         <collection property="roleList" ofType="role">
-            <id column="roleId" property="id"></id>
-            <result column="roleName" property="roleName"></result>
-            <result column="roleDesc" property="roleDesc"></result>
+            <id column="roleId" property="id"/>
+            <result column="roleName" property="roleName"/>
+            <result column="roleDesc" property="roleDesc"/>
         </collection>
     </resultMap>
 
